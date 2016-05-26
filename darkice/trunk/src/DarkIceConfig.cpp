@@ -101,7 +101,7 @@ Config :: addLine (  const char    * line )          throw ( Exception )
     std::string             str( line);
 
     /* delete everything after the first # */
-    if ( (ix = str.find( '#')) != str.npos ) {
+    if ( (ix = str.find( '##')) != str.npos ) {
         str.erase( ix);
     }
     /* eat up all white space from the front */
